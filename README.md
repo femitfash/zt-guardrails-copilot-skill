@@ -2,6 +2,10 @@
 
 A [Claude Code](https://claude.ai/claude-code) skill for adding [ZeroTrusted.ai](https://zerotrusted.ai) guardrails to any AI copilot or chat UI. Includes complete React components, Next.js API routes, and the full privacy-safe conversation flow with PII detection, anonymization, auto-deanonymization, and hallucination checking.
 
+## Prerequisites
+
+> **You need a ZeroTrusted.ai account to use this skill.** Sign up for a free trial at **[zerotrusted.ai/signup](https://www.zerotrusted.ai/signup)** — no credit card required.
+
 ## What is a Claude Code Skill?
 
 Claude Code skills are markdown files that give Claude deep knowledge of specific APIs, patterns, and workflows. When loaded into a Claude Code session, this skill enables Claude to add production-ready guardrails to your copilot — with working UI components, API routes, and state management.
@@ -10,7 +14,7 @@ Claude Code skills are markdown files that give Claude deep knowledge of specifi
 
 - **PII Detection Modal** — Warns users when sensitive data is detected, with entity-by-entity breakdown
 - **One-Click Anonymization** — Replace PII with realistic fake values before sending to LLM
-- **Auto-Deanonymization** — Automatically restore original values in AI responses (default ON, toggleable)
+- **Auto-Deanonymization** — Automatically restore original values in AI responses and action card inputs (default ON, toggleable)
 - **History Scrubbing** — Ensures original PII never leaks to the LLM through conversation history
 - **Hallucination Check** — Reliability scoring with auto/manual modes and visual badges
 - **Validation Badges** — Per-message indicators showing PII scan status
@@ -21,7 +25,7 @@ Claude Code skills are markdown files that give Claude deep knowledge of specifi
 
 ### 1. Get your API key
 
-Sign up at [zerotrusted.ai](https://zerotrusted.ai) and get your API key.
+Sign up for a **free trial** at [zerotrusted.ai/signup](https://www.zerotrusted.ai/signup) and get your API key from the dashboard.
 
 ### 2. Add to your environment
 
@@ -48,7 +52,7 @@ Then ask Claude Code: *"Add ZeroTrusted.ai guardrails to my copilot"*
 User types message
   -> PII Pre-Check (detect-sensitive-keywords)
      -> PII found -> Show modal -> Anonymize -> Send safe text to LLM
-        -> LLM responds -> Auto-deanonymize -> Show original values
+        -> LLM responds -> Auto-deanonymize response + action inputs
      -> No PII -> Send directly
   -> Post-response: Hallucination check (auto or manual)
 ```
@@ -68,7 +72,7 @@ User types message
 
 - Animated PII scanning steps indicator
 - PII warning modal with detection list and anonymization mappings
-- Auto-deanonymize toggle (default ON)
+- Auto-deanonymize toggle (default ON) — covers both response text and action card inputs
 - Reliability/hallucination badge (green/red with score)
 - Manual "Check Reliability" button
 - Deanonymizing progress indicator
