@@ -4,7 +4,7 @@ A [Claude Code](https://claude.ai/claude-code) skill for adding [ZeroTrusted.ai]
 
 ## Prerequisites
 
-> **You need a ZeroTrusted.ai account to use this skill.** Sign up for a free trial at **[zerotrusted.ai/signup](https://www.zerotrusted.ai/signup)** — no credit card required.
+> **You need a ZeroTrusted.ai account to use this skill.** Sign up for a free trial at **[zerotrusted.ai/signup](https://identity.zerotrusted.ai/Account/SignUp)** — no credit card required.
 
 ## What is a Claude Code Skill?
 
@@ -25,7 +25,7 @@ Claude Code skills are markdown files that give Claude deep knowledge of specifi
 
 ### 1. Get your API key
 
-Sign up for a **free trial** at [zerotrusted.ai/signup](https://www.zerotrusted.ai/signup) and get your API key from the dashboard.
+Sign up for a **free trial** at [zerotrusted.ai/signup](https://identity.zerotrusted.ai/Account/SignUp) and get your API key from the dashboard.
 
 ### 2. Add to your environment
 
